@@ -17,15 +17,17 @@ class ThreadWritePage extends StatelessWidget {
           '입력 해주세요!',
           '퍼블리셔, 리액트찍먹',
           '굿 팔로워',
+          'email@email.com',
         ),
         _memberProfile(
           '김재형',
-          'assets/images/2.png',
+          'assets/images/member_image2.jpg',
           'INFJ',
           29,
           '웹 기획자로 일을 했습니다. 라라랜드, 보헤미안랩소디, 인터스텔라, 오펜하이머 등 음악, 과학 영화 좋아합니다.',
           '광고홍보전공, 멀티미디어공학(복수전공), 웹기획자, 앱기획(찍먹..)',
           '한 몸 불사질러 보겠습니다.',
+          'gimjh1120@gmail.com',
         ),
         _memberProfile(
           '류정현',
@@ -35,6 +37,7 @@ class ThreadWritePage extends StatelessWidget {
           '입력 해주세요!',
           '빌리어네어, 고분자공학전공,dart 찍먹',
           '뼈를 묻겠습니다.',
+          'email@email.com',
         ),
         _memberProfile(
           '김민지',
@@ -44,13 +47,22 @@ class ThreadWritePage extends StatelessWidget {
           '입력 해주세요!',
           '마케터, 네이버여행인플루언서, 내일모래반백살, 코린이 ',
           '화이팅!!!!',
+          'email@email.com',
         ),
       ],
     );
   }
 
-  Widget _memberProfile(String memberName, String profileImg, String mbti,
-      int age, String introduction, String tmi, String comment) {
+  Widget _memberProfile(
+    String memberName,
+    String profileImg,
+    String mbti,
+    int age,
+    String introduction,
+    String tmi,
+    String comment,
+    String email,
+  ) {
     return GestureDetector(
       onTap: () {
         Get.to(() => MemberProfile(
@@ -60,7 +72,8 @@ class ThreadWritePage extends StatelessWidget {
               age: age,
               introduction: introduction,
               tmi: tmi,
-              comment: comment, // comment 인자를 추가하여 전달
+              comment: comment,
+              email: email, // comment 인자를 추가하여 전달
             ));
       },
       child: Container(

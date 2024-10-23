@@ -8,6 +8,7 @@ class MemberProfile extends StatelessWidget {
   final String introduction;
   final String tmi;
   final String comment;
+  final String email;
 
   const MemberProfile({
     Key? key,
@@ -17,7 +18,8 @@ class MemberProfile extends StatelessWidget {
     required this.age,
     required this.introduction,
     required this.tmi,
-    required this.comment, // 이 필드가 required로 선언됨
+    required this.comment,
+    required this.email,
   }) : super(key: key);
 
   Widget _profileBox(String title, String content) {
@@ -114,7 +116,7 @@ class MemberProfile extends StatelessWidget {
                       Icon(Icons.email, color: Colors.black54),
                       SizedBox(width: 5),
                       Text(
-                        'Email: example@email.com',
+                        'GitHub: $email',
                         style: TextStyle(fontSize: 16, color: Colors.black54),
                       ),
                     ],
