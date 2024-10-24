@@ -41,13 +41,13 @@ class ThreadWritePage extends StatelessWidget {
         ),
         _memberProfile(
           '김민지',
-          'assets/images/jane.jpg',
+          'assets/images/minji.png',
           'ISFP',
           00,
-          '입력 해주세요!',
+          '여행에 진심인 여행블로거입니다. 여행플랫폼을 만들고 싶어요~',
           '마케터, 네이버여행인플루언서, 내일모래반백살, 코린이 ',
           '화이팅!!!!',
-          'email@email.com',
+          'ssicanara@naver.com',
         ),
       ],
     );
